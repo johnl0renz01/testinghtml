@@ -1,0 +1,402 @@
+body {
+	margin: auto;
+	position: relative;
+	background-repeat:no-repeat;
+	background-size:100% 160vh;
+}
+
+.container-main {
+	display: grid;
+	margin: 30px;
+	grid-template-row: repeat(2, 1fr);
+	color: white;
+	text-align: center;
+}
+			
+.container-album {
+	zoom: 40%;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	border-right: 5px solid rgb(13, 158, 117);
+	border-bottom: 5px solid rgb(63, 82, 13);
+	border-left: 5px solid rgb(125, 57, 22);
+	border-top: 5px solid rgb(163, 147, 0);
+	
+}
+
+.album-video-A {
+	border-right: 10px solid rgb(128, 14, 10);
+	border-bottom: 10px solid rgb(84, 8, 5);
+	border-left: 10px solid rgb(128, 14, 10);
+	border-top: 10px solid rgb(186, 35, 30);
+	
+}
+
+.album-video-B {
+	border-right: 10px solid rgb(128, 78, 4);
+	border-bottom: 10px solid rgb(71, 43, 2);
+	border-left: 10px solid rgb(128, 78, 4);
+	border-top: 10px solid rgb(176, 106, 0);
+	
+}
+
+.album-video-C {
+	border-right: 10px solid rgb(138, 131, 0);
+	border-bottom: 10px solid rgb(64, 58, 0);
+	border-left: 10px solid rgb(138, 131, 0);
+	border-top: 10px solid rgb(191, 185, 0);
+	
+}
+
+.album-video-D {
+	border-right: 10px solid rgb(0, 64, 148);
+	border-bottom: 10px solid rgb(0, 37, 84);
+	border-left: 10px solid rgb(0, 64, 148);
+	border-top: 10px solid rgb(0, 83, 191);
+	
+}
+
+.album-video-E {
+	border-right: 10px solid rgb(128, 14, 10);
+	border-bottom: 10px solid rgb(84, 8, 5);
+	border-left: 10px solid rgb(128, 14, 10);
+	border-top: 10px solid rgb(186, 35, 30);
+	
+}
+
+.container-popup {
+	display: none;
+	bottom: 0;
+}
+
+.container-feedback {
+	display: block;
+	width: 100%;
+}
+
+.container-feedback-head {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	font-family: tahoma;
+	font-weight: bold;
+	color: rgba(190, 190, 190);
+}
+
+.container-feedback-body {
+	grid-template-columns: repeat(2, 1fr);
+	display: grid;
+	text-align: left;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+	grid-column: span 3;	
+}
+
+.container-feedback-footer {
+	position: relative;
+	display: block;
+	text-align: center;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+}
+
+
+#body-format {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+form {
+	display: flex;
+}
+
+form input {
+	margin-top: -3px;
+	color: white;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #FFF;
+	outline: none;
+}
+
+textarea {
+	font-size: 18px;
+	resize: none;
+	color: white;
+	flex: 2;
+	background: transparent;
+	outline: none;
+}
+
+.radio {
+	padding-top: 20px;
+	font-size: default;
+}
+
+.radio label {
+	display: block;
+	padding-left: 15px;
+	text-indent: -30px;
+}
+
+.radio input {
+	width: 30px;
+	height: 13px;
+	padding: 0;
+	margin:0;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+	*overflow: hidden;
+}
+
+
+#align-A {
+	align-self: flex-start;
+}
+
+#align-B {
+	align-self: center;
+}
+
+#align-C {
+	align-self: flex-end;
+}
+
+.open-button {
+	background-color: rgba(100, 100, 100, .50);
+	color: white;
+	padding: 10px 14px;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	width: 180px;
+}
+
+.close-button {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	padding: 10px 14px;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	width: 100px;
+}
+
+.submit-button {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	padding: 10px 14px;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	width: 100px;
+}
+
+
+.open-button:hover {
+	background-color: rgba(100, 100, 100);
+}
+
+#Cbutton-A,#Sbutton-A {
+	background-color: rgba(13, 158, 117, .50);
+}
+
+#Cbutton-A:hover,#Sbutton-A:hover {
+	background-color: rgba(13, 158, 117);
+}
+
+#Cbutton-B,#Sbutton-B {
+	background-color: rgba(148, 20, 0, .50);
+}
+
+#Cbutton-B:hover,#Sbutton-B:hover {
+	background-color: rgba(148, 20, 0);
+}
+
+#Cbutton-C,#Sbutton-C {
+	background-color: rgba(148, 101, 0, .50);
+}
+
+#Cbutton-C:hover,#Sbutton-C:hover {
+	background-color: rgba(148, 101, 0);
+}
+
+#Cbutton-D,#Sbutton-D {
+	background-color: rgba(141, 148, 0, .50);
+}
+
+#Cbutton-D:hover,#Sbutton-D:hover {
+	background-color: rgba(141, 148, 0);
+}
+
+#Cbutton-E,#Sbutton-E {
+	background-color: rgba(0, 64, 148, .50);
+}
+
+#Cbutton-E:hover,#Sbutton-E:hover {
+	background-color: rgba(0, 64, 148);
+}
+
+.red-circle {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: -331px;
+	right: 0;
+	text-align: center;
+	height: 77px;
+	width: 77px;
+	border: none;
+	border-radius: 77%;
+	cursor: pointer;
+	background-color: red;
+	opacity: 0;
+}
+
+.orange-circle {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: -166px;
+	right: 0;
+	text-align: center;
+	height: 77px;
+	width: 77px;
+	border: none;
+	border-radius: 77%;
+	cursor: pointer;
+	background-color: orange;
+	opacity: 0;
+}
+
+
+.yellow-circle {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: -1px;
+	right: 0;
+	text-align: center;
+	height: 77px;
+	width: 77px;
+	border: none;
+	border-radius: 77%;
+	cursor: pointer;
+	background-color: yellow;
+	opacity: 0;
+}
+
+.greenyellow-circle {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: -164px;
+	text-align: center;
+	height: 77px;
+	width: 77px;
+	border: none;
+	border-radius: 77%;
+	cursor: pointer;
+	background-color: #ADFF2F;
+	opacity: 0;
+}
+
+.green-circle {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: -328px;
+	text-align: center;
+	height: 77px;
+	width: 77px;
+	border: none;
+	border-radius: 77%;
+	cursor: pointer;
+	background-color: green;
+	opacity: 0;
+}
+
+#workmap {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	opacity: 1;
+}
+
+#L {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	opacity: 0;
+}
+
+#O {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	opacity: 0;
+}
+
+#R {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	opacity: 0;
+}
+
+#E {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	opacity: 0;
+}
+
+#N {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	opacity: 0;
+}
+
+#Z {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	opacity: 0;
+}
+
+#area-1:hover {
+	
+}

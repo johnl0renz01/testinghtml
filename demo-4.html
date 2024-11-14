@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="democss.css"/>
+		<title>E</title>
+		<style>
+			body { background-image: linear-gradient(90deg, rgb(0, 13, 36), rgb(0, 0, 0), rgb(0, 0, 0), rgb(10, 10, 10), rgb(15, 15, 15), rgb(15, 15, 15), rgb(10, 10, 10), rgb(10, 10, 10), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 13, 36)); }
+		</style>
+	</head>
+	<body>
+		<div class="container-main">
+			<div class="album-video-D">
+				<iframe width="100%" height="500" src="https://www.youtube.com/embed/wkS2l_hGQFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div><br>
+			<span style="font-weight:bold;color:rgba(0, 93, 207);font-size:25px">Avenged Sevenfold - Nightmare</span>
+			<span style="font-family:tahoma;font-size:18px">
+				"Nightmare" is a song by American heavy metal band Avenged Sevenfold. It was released on May 18, 2010, as the lead single for their fifth studio album, Nightmare.
+			</span>
+			<br><br>
+			<button class="open-button" id="feedbackButton" onclick="openForm()" style="margin:auto;margin-top:20px">Create Feedback</button>
+			<div class="container-popup" id="feedbackForm">
+				<div class="container-feedback" style="background-color: rgba(40, 40, 40, .80)">
+					<br>
+					<div class="container-feedback-head" style="background-color:rgb(70, 70, 70, .40)">
+						<span style="font-family:verdana"> FEEDBACK FORM </span><br>
+						<span style="font-size:15px;font-weight:normal;color:white;padding-top:10px">We would love to hear your thoughts, concerns or problems with anything so we can improve! </span>
+					</div>
+					<br>
+					<br>
+					<div class="container-feedback-body">
+						<span id="body-format">
+							<form>
+							Name:&nbsp
+								<input type="text" name="name" id="name" onkeypress="return onlyLetterKey(event)" maxlength="40" style="font-size:18px;flex: 3" placeholder="(Optional)">
+							</form>
+						</span>
+						
+						<span id="body-format">
+							What kind of Feedback? &nbsp
+							<select name="feedback-type" id="type" style="font-size:15px">
+								<option value="" disabled selected>Select your option</option>
+								<option value="option1">Suggestion</option>
+								<option value="option2">Appreciation</option>
+								<option value="option3">Resentment</option>
+								<option value="option4">Complaint</option>
+							</select>
+						</span>
+						
+						<span id="body-format">
+							<br>
+							<form>
+							Age &nbsp&nbsp:&nbsp
+								<input type="tel" name="age" id="age" onkeypress="return onlyNumberKey(event)" size="3"  maxlength="3" style="font-size:18px">
+							</form>
+						</span>
+						
+						<span id="body-format">
+							<br> Description:<br><br>
+						</span>
+						
+						<span id="body-format">
+							<div class="radio">
+								Gender:
+								<input type="radio" name="gender" id="gender1" value="male"> Male
+								<input type="radio" name="gender" id="gender2" value="female"> Female
+							</div>
+						</span>
+						
+						<span id="body-format">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<i>Please input your feedback below.</i>
+						</span>
+						
+						<span  id="body-format" style="padding-top:10px;">
+							<br>
+							What was your reason for visiting the site?
+							<br><br>
+							<form>
+								<input type="text" name="reason" id="reason" maxlength="50" style="font-size:18px;flex: 2" placeholder="Reason...">
+							</form>
+							<div class="radio">
+								Would you able to find what you need?
+								<input type="radio"  name="boolean" id="boolean1" value="true"> Yes
+								<input type="radio" name="boolean" id="boolean2" value="false"> No
+							</div>
+						</span>
+						
+						<span id="body-format">
+							<textarea name="feedback" id="feedback" rows="5" cols="56" placeholder="Feedback..."></textarea>
+						</span>	
+						<span></span>
+					</div>
+					
+					<div class="container-feedback-footer" style="padding-top:10px;height:150px">
+						
+						Please rate our website.<br><br>
+						<img src="rating-scale.png" style="zoom:50%" alt="ratings" usemap="#facemap">
+						<button class="red-circle" id="red" onclick="colorRed()"></button>
+						<button class="orange-circle" id="orange" onclick="colorOrange()"></button>
+						<button class="yellow-circle" id="yellow" onclick="colorYellow()"></button>
+						<button class="greenyellow-circle" id="green-yellow" onclick="colorGreenYellow()"></button>
+						<button class="green-circle" id="green" onclick="colorGreen()"></button>
+
+						<button class="close-button" id="Cbutton-E" onclick="closeForm()" style="bottom:0px;right:101px">Close</button>
+						<button class="submit-button"  id="Sbutton-E" style="bottom:0px;right:0px">Submit</button>
+					</div>
+						
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script src="hands-on-midterm.js"></script>
+</html>
